@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foritu Technologies | Tech Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+        <!-- Company Logo -->
+       <!-- <p> <img src="images/foritu logo.png" alt="Foritu Technologies Logo"> </p> -->
+
+        <img src="images/profile pic.jpeg" class="profile-pic" alt="Profile Photo">
+        <h1>Peter Kelly</h1>
+        <h2>Tech Engineer | <a href="https://foritu.io" target="_blank" class="company-link">Foritu Technologies</a></h2>
+        <p>Software • Security • Infrastructure • Automation</p>
+        <span class="badge"><a href="https://foritu.io" target="_blank">foritu.io</a></span>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+    <h3>About Me</h3>
+    <p>
+        I am a technology professional at <strong>Foritu Technologies</strong>, specializing in advanced IT systems, physical security, automation, and enterprise software solutions.
+        I provide both <strong>professional services</strong> and <strong>hardware supply</strong> to businesses and individuals.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h3>Services & Solutions</h3>
+    <div class="service-grid">
+
+        <div class="service-card" onclick="openModal(
+            'Software Development',
+            'POS, PMS, Inventory, Biometrics, Time & Attendance Systems.',
+            ['assets/software.jpg']
+        )">
+            <img src="images/software.jfif">
+            <h4>Software Development</h4>
+            <p>POS, PMS, Inventory, Biometrics, Time & Attendance Systems</p>
+        </div>
+
+        <div class="service-card" onclick="openModal(
+            'CCTV Installation & Maintenance',
+            'IP & Analog Cameras, NVRs, Remote Monitoring.',
+            ['assets/cctv.jpg']
+        )">
+            <img src="images/cctv.jpg">
+            <h4>CCTV Installation & Maintenance</h4>
+            <p>IP & Analog Cameras, NVRs, Remote Monitoring</p>
+        </div>
+
+        <div class="service-card" onclick="openModal(
+            'Networking',
+            'LAN, WAN, Fiber, Structured Cabling, Mikrotik.',
+            ['images/networking.jpg']
+        )">
+            <img src="images/networking.jpeg">
+            <h4>Networking</h4>
+            <p>LAN, WAN, Fiber, Structured Cabling, Mikrotik</p>
+        </div>
+
+        <div class="service-card" onclick="openModal(
+            'Electric Fence Systems',
+            'Perimeter Security, Earthing, Energizers.',
+            ['images/electric-fence.jpg']
+        )">
+            <img src="images/Electric fence.jpg">
+            <h4>Electric Fence Systems</h4>
+            <p>Perimeter Security, Earthing, Energizers</p>
+        </div>
+
+        <div class="service-card" onclick="openModal(
+            'Biometric Systems',
+            'Fingerprint, Face Recognition, Access Control.',
+            ['images/biometrics.jpg']
+        )">
+            <img src="images/Biometric.jpg">
+            <h4>Biometric Systems</h4>
+            <p>Fingerprint, Face Recognition, Access Control</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat">
+        <h2 data-count="120">0</h2>
+        <span>Projects Completed</span>
+    </div>
+    <div class="stat">
+        <h2 data-count="7">0</h2>
+        <span>Years Experience</span>
+    </div>
+    <div class="stat">
+        <h2 data-count="50">0</h2>
+        <span>Hardware Deployments</span>
+    </div>
+</section>
+
+<!-- SERVICE REQUEST FORM -->
+<section class="request">
+    <h3>Request a Service</h3>
+    <form id="serviceForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <select required>
+            <option value="">Select Service</option>
+            <option>Software Development</option>
+            <option>CCTV Installation</option>
+            <option>Networking</option>
+            <option>Electric Fence</option>
+            <option>Biometrics</option>
+        </select>
+        <textarea placeholder="Project Description"></textarea>
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<!-- PORTFOLIO MODAL -->
+<div id="portfolioModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-gallery" id="modalGallery"></div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Foritu Technologies | <a href="https://foritu.io" target="_blank">foritu.io</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

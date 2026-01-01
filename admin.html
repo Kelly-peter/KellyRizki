@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | Foritu Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h2 style="text-align:center; padding:20px; color:#00e5ff;">Admin – Manage Services</h2>
+</header>
+
+<section class="admin-section">
+    <div style="text-align:center; margin-bottom:20px;">
+        <input id="serviceName" placeholder="Service Name">
+        <input id="serviceDesc" placeholder="Service Description">
+        <button onclick="addService()">Add Service</button>
+    </div>
+    <ul id="serviceList"></ul>
+</section>
+
+<script src="admin.js"></script>
+</body>
+</html>
+
+        <div class="service-card" onclick="openModal(
+            'Access Control Systems',
+            'Biometric, RFID, Keypad Entry Systems.',
+            ['assets/access_control.jpg']
+        )">
+            <img src="assets/access_control.jpg">
+            <h4>Access Control Systems</h4>
+            <p>Biometric, RFID, Keypad Entry Systems</p>
+        </div>
+
+        <div class="service-card" onclick="openModal(
+            'Network & Infrastructure',
+            'Cabling, Routers, Switches, Firewalls.',
+            ['assets/network.jpg']
+        )">
+            <img src="assets/network.jpg">
+            <h4>Network & Infrastructure</h4>
+            <p>Cabling, Routers, Switches, Firewalls</p>
+        </div>
+
+    </div>
